@@ -24,10 +24,11 @@
 
     <div id='volume-container'>
 
-        <span>Volume:</span> <span id='by-size'>By Size:</span> <br><br>
+        <span>Volume:</span> <br><br>
         <input type='number' min='0' id='volumeInput' name='volume' placeholder='in oz.'>
     
         <select name="volume" id="bottles" onchange='transferInput()'>
+            <option selected disabled hidden>Or pick a type of container here</option>
             <optgroup label='Beer:'>
                 <option value="12">Single Can/Bottle</option>
                 <option value="24">Tall boy</option>
