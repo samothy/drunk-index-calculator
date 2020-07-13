@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol Calculator</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+    <h1>DRUNK INDEX CALCULATOR:</h1>
+
+    <div id='all-container' class='row'>
+
+    <div id='input-container' class='column'>
+
+    <p>Price:</p><input type='number' min='0' id='priceInput' placeholder='in USD'> 
+    
+    <br><br>
+
+    <div id='volume container'>
+
+        <p>Volume:</p><input type='number' min='0' id='volumeInput' name='volume' placeholder='in oz.'>
+    
+        <select name="volume" id="bottles" onchange='transferInput()'>
+            <optgroup label='Beer:'>
+                <option value="12">Single Can/Bottle</option>
+                <option value="24">Tall boy</option>
+                <option value='64'>Growler</option>
+                <option value="72">6-pack</option>
+                <option value="360">30-rack</option>
+            </optgroup>
+
+            <optgroup label='Liquor:'>
+                <option value='1.5'>Shooter</option>
+                <option value='25.3605'>Bottle</option>
+                <option value="59.174">Handle</option>
+            </optgroup>
+        
+            <optgroup label='Other:'>
+                <option value="25.3605">Wine: Bottle</option>
+            </optgroup>
+        </select>
+
+    </div>
+
+    
+    
+    <br><br>
+    <p>Alcohol By Volume:</p><input type='number' min='0' max='1' step='0.01' id='abvInput' placeholder='e.g. 6.5'><br><br>
+    <button id='submit' onclick='submit()'>Submit</button>
+    <h3 id='drunkIndex'>Drunk Index:</h3>
+
+    </div>
+
+    <div id='notes-container' class='column'>
+
+    <p id='notes'>Notes: The Drunk Index can be seen as the relationship between the cost of an object and the amount of pure alcohol it contains. The higher the number, the more booze for your buck. For example, a 6-pack of Corona Extra has a drunk index of 37, and a handle of Fleischmann's vodka scores much higher at a 215.</p>
+
+    </div>
+
+    </div>
+
+</body>
+
+<script src='script.js'></script>
+</html>
