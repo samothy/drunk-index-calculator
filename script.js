@@ -4,7 +4,7 @@ function submit() {
     let alcohol = document.getElementById('abvInput').value;
 
     let unrounded = (volume/price) * alcohol;
-    let drunkIndex = unrounded.toFixed(2);
+    let drunkIndex = Math.floor(unrounded);
 
     scoreRating(drunkIndex);
 
@@ -39,18 +39,28 @@ function scoreRating(index) {
 function printRating(rating) {
     if (rating === 1) {
         document.getElementById('img-1').src = 'gold-star.png';
+        document.getElementById('img-2').src = 'gray-star.png';
+        document.getElementById('img-3').src = 'gray-star.png';
+        document.getElementById('img-4').src = 'gray-star.png';
+        document.getElementById('img-5').src = 'gray-star.png';
     } else if (rating === 2) {
         document.getElementById('img-1').src = 'gold-star.png';
         document.getElementById('img-2').src = 'gold-star.png';
+        document.getElementById('img-3').src = 'gray-star.png';
+        document.getElementById('img-4').src = 'gray-star.png';
+        document.getElementById('img-5').src = 'gray-star.png';
     } else if (rating === 3) {
         document.getElementById('img-1').src = 'gold-star.png';
         document.getElementById('img-2').src = 'gold-star.png';
         document.getElementById('img-3').src = 'gold-star.png';
+        document.getElementById('img-4').src = 'gray-star.png';
+        document.getElementById('img-5').src = 'gray-star.png';
     } else if (rating === 4) {
         document.getElementById('img-1').src = 'gold-star.png';
         document.getElementById('img-2').src = 'gold-star.png';
         document.getElementById('img-3').src = 'gold-star.png';
         document.getElementById('img-4').src = 'gold-star.png';
+        document.getElementById('img-5').src = 'gray-star.png';
     } else {
         document.getElementById('img-1').src = 'gold-star.png';
         document.getElementById('img-2').src = 'gold-star.png';
