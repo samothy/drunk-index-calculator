@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
   body {
@@ -21,22 +22,94 @@
   }
 
   #volumeInput {
-      width: 75px;
+      width: 30%;
   }
 
   #bottles {
-      width: 220px;
+      float: right;
+      width: 68%;
+      height: 25px;
   }
 
   #abvInput {
-      width: 180px;
+      width: 300px;
   }
 
   #notes {
       line-height: 1.25;
       text-align: justify;
+      width: 330px;
   }
 
   #priceInput {
       width: 300px;
+  }
+
+  #volume-container {
+      width: 300px;
+  }
+
+  input {
+      height: 25px;
+  }
+
+  #input-container {
+      width: 330px;
+      border: 2px solid black;
+      border-radius: 5px;
+      background: lightgray;
+  }
+
+  #all-container {
+      width: 670px;
+
+  }
+
+  #by-size {
+        margin-left: 40px;
+  }
+
+  h2 {
+      font-size: 45px;
+      text-align: center;
+      margin-top: 0px;
+      margin-bottom: 0px;
+  }
+
+  #output-container {
+      text-align: center;
+      
+  }
+
+  #output {
+      font-size: 70px;
+      
+  }
+
+  #inner-output-container {
+    border: 2px solid black;
+      border-radius: 5px;
+      background-color: white;
+      margin: 5px 5px 5px 5px;
+  }
+
+  #drunk-index {
+      margin-top: 15px;
+      margin-bottom: 10px;
+      font-size: 35px;
+      font-weight: lighter;
+  }
+
+  #rating-container {
+      border: 2px black solid;
+      border-radius: 5px;
+      background-color: white;
+      margin: 5px 5px 5px 5px;
+      display: block;
+      text-align: center;
+  }
+
+  img {
+    margin-top: 3px;
+    margin-bottom: 3px;
   }
