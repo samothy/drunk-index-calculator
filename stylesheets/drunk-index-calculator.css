@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    align-items: center;
+}
+  
+#all-container {
+    width: 670px;
+}
+
+#input-container {
+    width: 330px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: rgba(200, 100, 45, 0.3);
+}
+
+#volume-container {
+    width: 300px;
+}
+
+#rating-container {
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px 5px 5px 5px;
+    display: block;
+    text-align: center;
+}
+
+#output-container {
+    text-align: center;  
+}
+
+#inner-output-container {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px 5px 5px 5px;
+}
+
+button {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-top: 9px;
+    margin-bottom: 0px;
+}
+
+img {
+    margin-top: 3px;
+    margin-bottom: 3px;
+  }
+
+input {
+    height: 25px;
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+select {
+    right: 0px;
+}
+
+.header {
+    margin-left: 10px;
+}
+
+#abv-input {
+    width: 300px;
+}
+
+
+#drunk-index {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: lighter;
+}
+
+#notes {
+    line-height: 1.25;
+    text-align: justify;
+    width: 330px;
+}
+
+#output {
+    font-size: 45px;
+}
+
+#price-input {
+    width: 300px;
+}
+
+#volume-dropdown {
+    float: right;
+    margin-right: -10px;
+    width: 65%;
+    height: 25px;
+    cursor: pointer;
+    font-size: 12px; 
+}
+
+#volume-input {
+    width: 33%;
+}
