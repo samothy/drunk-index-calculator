@@ -38,35 +38,35 @@ function scoreRating(index) {
 
 function printRating(rating) {
     if (rating === 1) {
-        document.getElementById('img-1').src = 'gold-star.png';
-        document.getElementById('img-2').src = 'gray-star.png';
-        document.getElementById('img-3').src = 'gray-star.png';
-        document.getElementById('img-4').src = 'gray-star.png';
-        document.getElementById('img-5').src = 'gray-star.png';
+        document.getElementById('img-1').src = '../assets/images/gold-star.png';
+        document.getElementById('img-2').src = '../assets/images/gray-star.png';
+        document.getElementById('img-3').src = '../assets/images/gray-star.png';
+        document.getElementById('img-4').src = '../assets/images/gray-star.png';
+        document.getElementById('img-5').src = '../assets/images/gray-star.png';
     } else if (rating === 2) {
-        document.getElementById('img-1').src = 'gold-star.png';
-        document.getElementById('img-2').src = 'gold-star.png';
-        document.getElementById('img-3').src = 'gray-star.png';
-        document.getElementById('img-4').src = 'gray-star.png';
-        document.getElementById('img-5').src = 'gray-star.png';
+        document.getElementById('img-1').src = '../assets/images/gold-star.png';
+        document.getElementById('img-2').src = '../assets/images/gold-star.png';
+        document.getElementById('img-3').src = '../assets/images/gray-star.png';
+        document.getElementById('img-4').src = '../assets/images/gray-star.png';
+        document.getElementById('img-5').src = '../assets/images/gray-star.png';
     } else if (rating === 3) {
-        document.getElementById('img-1').src = 'gold-star.png';
-        document.getElementById('img-2').src = 'gold-star.png';
-        document.getElementById('img-3').src = 'gold-star.png';
-        document.getElementById('img-4').src = 'gray-star.png';
-        document.getElementById('img-5').src = 'gray-star.png';
+        document.getElementById('img-1').src = '../assets/images/gold-star.png';
+        document.getElementById('img-2').src = '../assets/images/gold-star.png';
+        document.getElementById('img-3').src = '../assets/images/gold-star.png';
+        document.getElementById('img-4').src = '../assets/images/gray-star.png';
+        document.getElementById('img-5').src = '../assets/images/gray-star.png';
     } else if (rating === 4) {
-        document.getElementById('img-1').src = 'gold-star.png';
-        document.getElementById('img-2').src = 'gold-star.png';
-        document.getElementById('img-3').src = 'gold-star.png';
-        document.getElementById('img-4').src = 'gold-star.png';
-        document.getElementById('img-5').src = 'gray-star.png';
+        document.getElementById('img-1').src = '../assets/images/gold-star.png';
+        document.getElementById('img-2').src = '../assets/images/gold-star.png';
+        document.getElementById('img-3').src = '../assets/images/gold-star.png';
+        document.getElementById('img-4').src = '../assets/images/gold-star.png';
+        document.getElementById('img-5').src = '../assets/images/gray-star.png';
     } else {
-        document.getElementById('img-1').src = 'gold-star.png';
-        document.getElementById('img-2').src = 'gold-star.png';
-        document.getElementById('img-3').src = 'gold-star.png';
-        document.getElementById('img-4').src = 'gold-star.png';
-        document.getElementById('img-5').src = 'gold-star.png';
+        document.getElementById('img-1').src = '../assets/images/gold-star.png';
+        document.getElementById('img-2').src = '../assets/images/gold-star.png';
+        document.getElementById('img-3').src = '../assets/images/gold-star.png';
+        document.getElementById('img-4').src = '../assets/images/gold-star.png';
+        document.getElementById('img-5').src = '../assets/images/gold-star.png';
     }
 }
 
