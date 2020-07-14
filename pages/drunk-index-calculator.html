@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alcohol Calculator</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+    <div id='all-container' class='row'>
+
+        <div id='input-container' class='column'>
+
+            <h2>Drunk Index Calculator</h2>
+
+            <p class='header'>Price:</p><input type='number' min='0' id='price-input' placeholder='in USD'> 
+    
+        <br><br>
+
+        <div id='volume-container'>
+
+        <span class='header'>Volume:</span> <br><br>
+        <input type='number' min='0' id='volume-input' name='volume' placeholder='in oz.'>
+    
+        <select name="volume" id="volume-dropdown" onchange='transferInput()'>
+            <option selected disabled hidden>Or pick a type of container here</option>
+            <optgroup label='Beer:'>
+                <option value="12">Single Can/Bottle</option>
+                <option value="24">Tall boy</option>
+                <option value='64'>Growler</option>
+                <option value="72">6-pack</option>
+                <option value="360">30-rack</option>
+            </optgroup>
+
+            <optgroup label='Liquor:'>
+                <option value='1.5'>Shooter</option>
+                <option value='25.3605'>Bottle</option>
+                <option value="59.174">Handle</option>
+            </optgroup>
+        
+            <optgroup label='Other:'>
+                <option value="25.3605">Wine: Bottle</option>
+                <option value='40'>Malt Liquor: 40</option>
+            </optgroup>
+        </select>
+
+        </div>
+
+        <p></p>
+
+        <p class='header'>Alcohol By Volume:</p><input type='number' min='0' max='1' step='0.01' id='abv-input' placeholder='out of 100, e.g. 6.5'><br><br>
+
+        <div id='output-container'>
+
+        <button id='submit' onclick='submit()'>Submit</button>
+        
+        <br><br>
+
+        <span id='drunk-index'>Drunk Index:</span>
+
+        <br>
+        
+        <div id='inner-output-container'>
+
+            <span id='output'>0</span>
+
+        </div>
+        
+    </div>
+
+        <div id='rating-container'>
+
+            <img src='/assets/images/gray-star.png' id='img-1'>
+            <img src='/assets/images/gray-star.png' id='img-2'>
+            <img src='/assets/images/gray-star.png' id='img-3'>
+            <img src='/assets/images/gray-star.png' id='img-4'>
+            <img src='/assets/images/gray-star.png' id='img-5'>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+
+<script src='drunk-index-calculator.js'></script>
+
+</html>
