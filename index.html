@@ -1,113 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alcohol Calculator</title>
-    <link rel='stylesheet' href='/stylesheets/style.css'>
+  <title>samandtyler.party</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div id='nav-placeholder'>
 
-    <div class="topnav" id="myTopnav">
-    <a href="../index.html" class="active">Home</a>
-    <a href="../pages/games.html">Games</a>
-    <a href="../pages/tools.html">Tools</a>
-    <a href="../pages/about.html">About</a>
-    <a href="../pages/resources.html">Resources</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
+</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
-
-   
-
-    <div id='all-container' class='row'>
-
-        
-
-    <div id='input-container' class='column'>
-
-        <h2>Drunk Index Calculator</h2>
-
-        <p>Price:</p><input type='number' min='0' id='priceInput' placeholder='in USD'> 
-    
-    <br><br>
-
-    <div id='volume-container'>
-
-        <span>Volume:</span> <br><br>
-        <input type='number' min='0' id='volumeInput' name='volume' placeholder='in oz.'>
-    
-        <select name="volume" id="bottles" onchange='transferInput()'>
-            <option selected disabled hidden>Or pick a type of container here</option>
-            <optgroup label='Beer:'>
-                <option value="12">Single Can/Bottle</option>
-                <option value="24">Tall boy</option>
-                <option value='64'>Growler</option>
-                <option value="72">6-pack</option>
-                <option value="360">30-rack</option>
-            </optgroup>
-
-            <optgroup label='Liquor:'>
-                <option value='1.5'>Shooter</option>
-                <option value='25.3605'>Bottle</option>
-                <option value="59.174">Handle</option>
-            </optgroup>
-        
-            <optgroup label='Other:'>
-                <option value="25.3605">Wine: Bottle</option>
-                <option value='40'>Malt Liquor: 40</option>
-            </optgroup>
-        </select>
-
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="../pages/home.html">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools and Games<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../pages/drunk-index-calculator.html">Drunk Index Calculator</a></li>
+            <li><a href="#">Text-Based Game</a></li>
+            <li><a href="#">Gridrunner</a></li>
+          </ul>
+        </li>
+        <li><a href="../pages/about.html">About</a></li>
+        <li><a href="../pages/index.html">Resources</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
-
-    <p></p>
-
-    <p>Alcohol By Volume:</p><input type='number' min='0' max='1' step='0.01' id='abvInput' placeholder='out of 100, e.g. 6.5'><br><br>
-
-    
-
-
-    <div id='output-container'>
-
-        <button id='submit' onclick='submit()'>Submit</button>
-        
-        <br><br>
-
-        <span id='drunk-index'>Drunk Index:</span>
-
-        <br>
-        
-        <div id='inner-output-container'>
-
-            <span id='output'>0</span>
-
-        </div>
-        
-    </div>
-
-    <div id='rating-container'>
-
-        <img src='../assets/images/gray-star.png' id='img-1'>
-        <img src='../assets/images/gray-star.png' id='img-2'>
-        <img src='../assets/images/gray-star.png' id='img-3'>
-        <img src='../assets/images/gray-star.png' id='img-4'>
-        <img src='../assets/images/gray-star.png' id='img-5'>
-
-    </div>
-
-    </div>
-
-   
-
-    </div>
-    <a href="../pages/about.html">try</a>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Welcome</h3>
+  <p>Our names are Tyler and Sam. This website serves as our collaborative tool and also an informal portfolio. 
+  <p>Please check out our projects under the "Tools and Games" tab!</p>
+</div>
 
 </body>
-
-<script src='/scripts/script.js'></script>
 </html>
