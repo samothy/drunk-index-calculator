@@ -3,33 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel='stylesheet' href='/stylesheets/style.css'>
+    <title>Page Three</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
+    <!--Navigation bar-->
+    <div id="nav-three">
 
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <div class="topnav" id="myTopnav">
-    <a href="../index.html" class="active">Home</a>
-    <a href="../pages/games.html">Games</a>
-    <a href="../pages/tools.html">Tools</a>
-    <a href="../pages/about.html">About</a>
-    <a href="../pages/resources.html">Resources</a>
-    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-    </a>
     </div>
 
-    <h2>The Pursuit of Drunkiness</h2>
+    <script>
+        $(function(){
+            $("#nav-three").load("nav.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
 
-    <br><br>
-
-    <p>
-        In honor of Samothy the Great. Not dead, just furloughed.
-    </p>
+    <span>Page Three</span>
 </body>
-
-<script src='script.js'></script>
 </html>
