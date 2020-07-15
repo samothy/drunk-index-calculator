@@ -4,7 +4,7 @@ $(function () {
     bar += '<div class="container-fluid">';
     bar += '<div>';
     bar += '<ul class="nav navbar-nav">';
-    bar += '<li id="home"><a href="home.html">Home</a></li>';
+    bar += '<li id="home"><a href="index.html">Home</a></li>';
     bar += '<li id="about"><a href="about.html">About</a></li>';
     bar += '</ul>';
     bar += '</div>';
