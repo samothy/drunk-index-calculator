@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hits and Blows</title>
+    <link rel='stylesheet' href='../stylesheets/hits-and-blows.css'>
+</head>
+<body>
+
+    <div id='board-container'>
+    
+        <div id='peg-box-1' class='peg-box'>
+
+            <button id='peg-1-1' class='peg'></button>
+            <button id='peg-1-2' class='peg'></button>
+            <button id='peg-1-3' class='peg'></button>
+            <button id='peg-1-4' class='peg'></button>
+
+        </div>
+
+        <div id='peg-box-2' class='peg-box'>
+
+            <button id='peg-2-1' class='peg'></button>
+            <button id='peg-2-2' class='peg'></button>
+            <button id='peg-2-3' class='peg'></button>
+            <button id='peg-2-4' class='peg'></button>
+            
+        </div>
+
+        <div id='peg-box-3' class='peg-box'>
+
+            <button id='peg-3-1' class='peg'></button>
+            <button id='peg-3-2' class='peg'></button>
+            <button id='peg-3-3' class='peg'></button>
+            <button id='peg-3-4' class='peg'></button>
+            
+        </div>
+
+        <div id='peg-box-4' class='peg-box'>
+
+            <button id='peg-4-1' class='peg'></button>
+            <button id='peg-4-2' class='peg'></button>
+            <button id='peg-4-3' class='peg'></button>
+            <button id='peg-4-4' class='peg'></button>
+            
+        </div>
+
+        <div id='peg-box-5' class='peg-box'>
+
+            <button id='peg-5-1' class='peg'></button>
+            <button id='peg-5-2' class='peg'></button>
+            <button id='peg-5-3' class='peg'></button>
+            <button id='peg-5-4' class='peg'></button>
+            
+        </div>
+
+        <div id='peg-box-6' class='peg-box'>
+
+            <button id='peg-6-1' class='peg'></button>
+            <button id='peg-6-2' class='peg'></button>
+            <button id='peg-6-3' class='peg'></button>
+            <button id='peg-6-4' class='peg'></button>
+            
+        </div>
+
+        <div id='peg-box-7' class='peg-box'>
+
+            <button id='peg-7-1' class='peg'></button>
+            <button id='peg-7-2' class='peg'></button>
+            <button id='peg-7-3' class='peg'></button>
+            <button id='peg-7-4' class='peg'></button>
+            
+        </div>
+
+        <div id='peg-box-8' class='peg-box'>
+
+            <button id='peg-8-1' class='peg'></button>
+            <button id='peg-8-2' class='peg'></button>
+            <button id='peg-8-3' class='peg'></button>
+            <button id='peg-8-4' class='peg'></button>
+            
+        </div>
+
+        <div id='ball-box-1' class='ball-box'>
+
+            <button id='ball-1-1' class='white' onclick='colorChange("ball-1-1")'></button>
+            <button id='ball-1-2' class='white' onclick='colorChange("ball-1-2")'></button>
+            <button id='ball-1-3' class='white' onclick='colorChange("ball-1-3")'></button>
+            <button id='ball-1-4' class='white' onclick='colorChange("ball-1-4")'></button>
+            <button id='submit-1' class='submit' onclick='submit("ball-1-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-2' class='ball-box'>
+
+            <button id='ball-2-1' class='white' onclick='colorChange("ball-2-1")'></button>
+            <button id='ball-2-2' class='white' onclick='colorChange("ball-2-2")'></button>
+            <button id='ball-2-3' class='white' onclick='colorChange("ball-2-3")'></button>
+            <button id='ball-2-4' class='white' onclick='colorChange("ball-2-4")'></button>
+            <button id='submit-2' class='submit' onclick='submit("ball-2-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-3' class='ball-box'>
+
+            <button id='ball-3-1' class='white' onclick='colorChange("ball-3-1")'></button>
+            <button id='ball-3-2' class='white' onclick='colorChange("ball-3-2")'></button>
+            <button id='ball-3-3' class='white' onclick='colorChange("ball-3-3")'></button>
+            <button id='ball-3-4' class='white' onclick='colorChange("ball-3-4")'></button>
+            <button id='submit-3' class='submit' onclick='submit("ball-3-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-4' class='ball-box'>
+
+            <button id='ball-4-1' class='white' onclick='colorChange("ball-4-1")'></button>
+            <button id='ball-4-2' class='white' onclick='colorChange("ball-4-2")'></button>
+            <button id='ball-4-3' class='white' onclick='colorChange("ball-4-3")'></button>
+            <button id='ball-4-4' class='white' onclick='colorChange("ball-4-4")'></button>
+            <button id='submit-4' class='submit' onclick='submit("ball-4-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-5' class='ball-box'>
+
+            <button id='ball-5-1' class='white' onclick='colorChange("ball-5-1")'></button>
+            <button id='ball-5-2' class='white' onclick='colorChange("ball-5-2")'></button>
+            <button id='ball-5-3' class='white' onclick='colorChange("ball-5-3")'></button>
+            <button id='ball-5-4' class='white' onclick='colorChange("ball-5-4")'></button>
+            <button id='submit-5' class='submit' onclick='submit("ball-5-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-6' class='ball-box'>
+
+            <button id='ball-6-1' class='white' onclick='colorChange("ball-6-1")'></button>
+            <button id='ball-6-2' class='white' onclick='colorChange("ball-6-2")'></button>
+            <button id='ball-6-3' class='white' onclick='colorChange("ball-6-3")'></button>
+            <button id='ball-6-4' class='white' onclick='colorChange("ball-6-4")'></button>
+            <button id='submit-6' class='submit' onclick='submit("ball-6-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-7' class='ball-box'>
+
+            <button id='ball-7-1' class='white' onclick='colorChange("ball-7-1")'></button>
+            <button id='ball-7-2' class='white' onclick='colorChange("ball-7-2")'></button>
+            <button id='ball-7-3' class='white' onclick='colorChange("ball-7-3")'></button>
+            <button id='ball-7-4' class='white' onclick='colorChange("ball-7-4")'></button>
+            <button id='submit-7' class='submit' onclick='submit("ball-7-")'>Check</button>
+
+        </div>
+
+        <div id='ball-box-8' class='ball-box'>
+
+            <button id='ball-8-1' class='white' onclick='colorChange("ball-8-1")'></button>
+            <button id='ball-8-2' class='white' onclick='colorChange("ball-8-2")'></button>
+            <button id='ball-8-3' class='white' onclick='colorChange("ball-8-3")'></button>
+            <button id='ball-8-4' class='white' onclick='colorChange("ball-8-4")'></button>
+            <button id='submit-8' class='submit' onclick='submit("ball-8-")'>Check</button>
+
+        </div>
+
+    </div>
+
+    <div id='selector-box'> 
+
+        <button id='red-selector' onclick='palette("red")'>Red</button>
+        <button id='blue-selector' onclick='palette("blue")'>Blue</button>
+        <button id='green-selector' onclick='palette("green")'>Green</button>
+        <button id='yellow-selector' onclick='palette("yellow")'>Yellow</button>
+        <button id='pink-selector' onclick='palette("pink")'>Pink</button>
+        <button id='orange-selector' onclick='palette("orange")'>Orange</button>
+    
+    </div>
+
+    <div id='win-container' class='hidden'>
+        <h1 id='win-message'>YOU WIN!</h1>
+        <button id='new-game' onclick='newGame()'>New Game</button>
+    </div>
+
+
+    <script src='../scripts/hits-and-blows.js'></script>
+
+</body>
+</html>
