@@ -1,0 +1,152 @@
+body {
+    display: flex;
+}
+
+
+/* PEG BOXES */
+
+.peg {
+    height: 50px;
+    width: 50px;
+}
+
+.peg-box {
+    height: 105px;
+    width: 105px;
+    display: grid;
+    grid-template-rows: repeat(2, 50px);
+    grid-template-columns: repeat(2, 50px);
+    grid-gap: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    background-color: darkgray;
+}
+
+/* BOARD GRID */
+
+#board-container {
+    height: 117px;
+    display: inline-grid;
+    grid-template-columns: repeat(8, 117px);
+    grid-template-rows: repeat(5, 117px);
+    grid-gap: 5px;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding: 5px;
+    background-color: lightgray;
+}
+
+/* INPUT COLUMNS */
+
+.ball-box {
+    padding: 5px;
+    height: 454px;
+    border: 1px solid black;
+    border-radius: 0px 0px 8px 8px;
+    border-top: none;
+    background-color: lightgray;
+}
+
+#ball-box-1 {
+    grid-template-columns: 1 / span 1;
+    grid-template-rows: 2 / span 4;
+}
+
+.ball {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.submit {
+    width: 105px;
+    height: 30px;
+}
+
+/* SELECTOR BOX */
+
+#selector-box {
+    margin-left: 30px;
+    display: inline-grid;
+    grid-template-rows: repeat(2, 130px);
+    grid-template-columns: repeat(3, 130px);
+    grid-gap: 5px;
+}
+
+/* COLORS */
+
+.white {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: white;
+}
+
+.red {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: red;
+}
+
+.blue {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: blue;
+}
+
+.green {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: green;
+}
+
+.yellow {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: yellow;
+}
+
+.pink {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: fuchsia;
+}
+
+.orange {
+    height: 105px;
+    width: 105px;
+    padding-top: 10px;
+    background-color: darkorange;
+}
+
+.red-peg {
+    background-color: red;
+}
+
+.yellow-peg {
+    background-color: yellow;
+}
+
+/* WIN BOX */
+
+#win-container {
+    
+    text-align: center;
+    z-index: 3;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.unhidden {
+    display: block;
+}
