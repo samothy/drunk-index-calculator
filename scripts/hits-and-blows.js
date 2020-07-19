@@ -1,3 +1,5 @@
+// Establish some global variables
+
 let cursorColor;
 
 let goalSequence = [];
@@ -9,7 +11,7 @@ playerWins = false;
 
 let dummy;
 
-// Disable all input buttons except for first turn
+// Disable all input buttons except for first turn -- notice iterator variable starts at 2
 for (i = 2 ; i < 9 ; i++) {
     let template = 'ball-';
     let fullName;
@@ -26,6 +28,17 @@ for (i = 2 ; i < 9 ; i++) {
     document.getElementById(name).disabled = true;
 }
 
+// Then disable all pegs (which are button elements)
+for (i = 1 ; i < 9 ; i++) {
+    let template = 'peg-';
+    let fullName;
+    for (j = 1 ; j < 5 ; j++) {
+        let suffix = i + '-' + j;
+        fullName = template + suffix;
+        document.getElementById(fullName).disabled = true;
+    }
+}
+
 function palette(colorSelection) {
 
     // Change the cursor color according to the button pressed:
@@ -33,35 +46,75 @@ function palette(colorSelection) {
 
 }
 
+// List of current guesses so that player can't make duplicate selections
+let currentGuesses = [];
+
 function colorChange(elementID) {
 
-    // Determine which class the ball is currently, remove that class, and replace it with cursorColor
+    // If cursorColor exists as a className for an element already (currentGuesses), replace it with white
+    noDuplicates(cursorColor, currentGuesses);
+
+    // Determine which class the ball is currently
     var element = document.getElementById(elementID);
     var currentColor = document.getElementById(elementID).className;
+
+    // Populate currentGuesses array with the classnames of each square in the current column.
+    currentGuesses = [];
+    let prefix = 'ball-'
+    let fullName;
+    for (i = 1 ; i < 5 ; i++) {
+        fullName = prefix + turns + '-' + i;
+        currentGuesses.push(document.getElementById(fullName).className);
+    }
+    console.log(currentGuesses);
+
+    if (currentGuesses.includes(cursorColor) === false) {
+        // Remove new element's class
+        element.classList.remove(currentColor);
+
+        // Add cursorColor as a class to the new element
+        element.classList.add(cursorColor);
+    } else {
+        noDuplicates(currentGuesses, cursorColor, element);
+    }
     
-    element.classList.remove(currentColor);
+}
 
-    // Add cursorColor as a class
-    element.classList.add(cursorColor);
-
+function noDuplicates(cursorColor, currentGuesses) {
+    
+    for (i = 0 ; i < 4 ; i++) {
+        if (currentGuesses[i] === cursorColor) {
+            duplicateID = document.getElementById(currentGuesses[i]);
+            console.log(duplicateID);
+        }
+    }
+    
 }
 
 function submit(origin) {
     
     // Create an array of the colors user has assigned to the box
-    let colors = [];
+    let guessSequence = [];
 
     for (i = 1 ; i < 5 ; i++) {
         let target = origin + i;
-        colors.push(document.getElementById(target).className);
+        guessSequence.push(document.getElementById(target).className);
     }
 
     // Disable input column after submission
     disableButtons(origin);
     
-    victoryCheck = arraysMatch(colors, goalSequence);
+    victoryCheck = arraysMatch(guessSequence, goalSequence);
 
     turns++;
+    console.log(turns);
+
+    if (turns === 9 && playerWins === false) {
+        disableEverything();
+        gameOver();
+    }
+
+    currentGuesses = [];
 
 }
 
@@ -142,6 +195,7 @@ function arraysMatch(guessSequence, goalSequence) {
     if (checkVictory(compareArray) === true) {
         disableEverything();
         winMessage();
+        playerWins = true;
     };
 	return compareArray;
 
@@ -350,4 +404,8 @@ function winMessage() {
 
 function newGame() {
     location.reload();
+}
+
+function gameOver() {
+    document.getElementById('loss-container').className = 'unhidden;'
 }
