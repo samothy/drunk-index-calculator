@@ -1,5 +1,10 @@
 body {
-    display: flex;
+    --red: #eb3b24;
+    --orange: #eb8220;
+    --blue: #929fd1;
+    --yellow: #f5e72b;
+    --pink: #b65aca;
+    --green: #4db41e;
 }
 
 
@@ -30,11 +35,15 @@ body {
     display: inline-grid;
     grid-template-columns: repeat(8, 117px);
     grid-template-rows: repeat(5, 117px);
-    grid-gap: 5px;
+    grid-gap: 4px;
     border: 2px solid black;
     border-radius: 8px;
     padding: 5px;
     background-color: lightgray;
+    z-index: 1;
+    position: absolute;
+    top: 5%;
+    left: 5%;
 }
 
 /* INPUT COLUMNS */
@@ -46,6 +55,7 @@ body {
     border-radius: 0px 0px 8px 8px;
     border-top: none;
     background-color: lightgray;
+    z-index: 10;
 }
 
 #ball-box-1 {
@@ -70,9 +80,36 @@ body {
 #selector-box {
     margin-left: 30px;
     display: inline-grid;
-    grid-template-rows: repeat(2, 130px);
+    grid-template-rows: repeat(3, 130px);
     grid-template-columns: repeat(3, 130px);
     grid-gap: 5px;
+    position: absolute;
+    top: 5%;
+    left: 1100px;
+}
+
+#red-selector {
+    background-color: var(--red);
+}
+
+#blue-selector {
+    background-color: var(--blue);
+}
+
+#green-selector {
+    background-color: var(--green);
+}
+
+#yellow-selector {
+    background-color: var(--yellow);
+}
+
+#pink-selector {
+    background-color: var(--pink);
+}
+
+#orange-selector {
+    background-color: var(--orange);
 }
 
 /* COLORS */
@@ -88,58 +125,106 @@ body {
     height: 105px;
     width: 105px;
     padding-top: 10px;
-    background-color: red;
+    background-color: var(--red);
 }
 
 .blue {
     height: 105px;
     width: 105px;
     padding-top: 10px;
-    background-color: blue;
+    background-color: var(--blue);
 }
 
 .green {
     height: 105px;
     width: 105px;
     padding-top: 10px;
-    background-color: green;
+    background-color: var(--green);
 }
 
 .yellow {
     height: 105px;
     width: 105px;
     padding-top: 10px;
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 
 .pink {
     height: 105px;
     width: 105px;
     padding-top: 10px;
-    background-color: fuchsia;
+    background-color: var(--pink);
 }
 
 .orange {
     height: 105px;
     width: 105px;
     padding-top: 10px;
-    background-color: darkorange;
+    background-color: var(--orange);
 }
 
 .red-peg {
-    background-color: red;
+    background-color: var(--red);
 }
 
 .yellow-peg {
-    background-color: yellow;
+    background-color: var(--yellow);
 }
 
-/* WIN BOX */
+.red-text {
+    color: var(--red);
+}
+
+.blue-text {
+    text-decoration: none;
+    color: var(--blue);
+}
+
+.green-text {
+    color: var(--green);
+}
+
+.yellow-text {
+    color: var(--yellow);
+}
+
+.pink-text {
+    color: var(--pink);
+}
+
+.orange-text {
+    color: var(--orange);
+}
+
+/* ENDGAME BOXES */
 
 #win-container {
     
     text-align: center;
-    z-index: 3;
+    z-index: 40;
+    height: 150px;
+    width: 200px;
+    background-color: rgba(146, 146, 146, 0.6);
+    position: absolute;
+    top: 420px;
+    left: 1228px;
+    border: 2px solid black;
+    border-radius: 8px;
+
+}
+
+#loss-container {
+
+    text-align: center;
+    z-index: 40;
+    height: 150px;
+    width: 200px;
+    background-color: rgba(146, 146, 146, 0.6);
+    position: absolute;
+    top: 420px;
+    left: 1228px;
+    border: 2px solid black;
+    border-radius: 8px;
 
 }
 
@@ -149,4 +234,35 @@ body {
 
 .unhidden {
     display: block;
+}
+
+#new-game {
+    height: 40px;
+    width: 180px;
+    font-size: 25px;
+}
+
+/* MISC */
+
+p {
+    text-indent: 25px;
+    max-width: 400px;
+    text-align: justify;
+}
+
+#help {
+    max-width: 400px;
+    text-align: center;
+}
+
+#help-link {
+    grid-row: span 1;
+    grid-column: span 3;
+    background-color: gray;
+    text-align: center;
+    font-size: 18px;
+    height: 25px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid black;
 }
