@@ -1,2 +1,2 @@
-# alcohol-calculator
- How much booze for your buck?
+# SamandTyler.party
+ An informal portfolio created by Sam Frost and Tyler Kerns. Includes games and utilities.
