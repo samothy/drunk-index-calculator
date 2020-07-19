@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hits and Blows</title>
-    <link rel='stylesheet' href='../stylesheets/hits-and-blows.css'>
+    <link rel='stylesheet' href='hits-and-blows.css'>
 </head>
 <body>
 
@@ -166,22 +166,27 @@
 
     <div id='selector-box'> 
 
-        <button id='red-selector' onclick='palette("red")'>Red</button>
-        <button id='blue-selector' onclick='palette("blue")'>Blue</button>
-        <button id='green-selector' onclick='palette("green")'>Green</button>
-        <button id='yellow-selector' onclick='palette("yellow")'>Yellow</button>
-        <button id='pink-selector' onclick='palette("pink")'>Pink</button>
-        <button id='orange-selector' onclick='palette("orange")'>Orange</button>
+        <button id='red-selector' onclick='palette("red")'></button>
+        <button id='blue-selector' onclick='palette("blue")'></button>
+        <button id='green-selector' onclick='palette("green")'></button>
+        <button id='yellow-selector' onclick='palette("yellow")'></button>
+        <button id='pink-selector' onclick='palette("pink")'></button>
+        <button id='orange-selector' onclick='palette("orange")'></button>
+        <a id='help-link' href='hits-and-blows-instructions.html'>Need Help?</a>
     
     </div>
 
     <div id='win-container' class='hidden'>
-        <h1 id='win-message'>YOU WIN!</h1>
+        <h1 id='win-message'>You Win!</h1>
         <button id='new-game' onclick='newGame()'>New Game</button>
     </div>
 
+    <div id='loss-container' class='hidden'>
+        <h1 id='loss-message'>Game Over</h1>
+        <button id='new-game' onclick='newGame()'>New Game</button>
+    </div>
 
-    <script src='../scripts/hits-and-blows.js'></script>
+    <script src='hits-and-blows.js'></script>
 
 </body>
 </html>
