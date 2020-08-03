@@ -1,0 +1,111 @@
+.pink {
+    background-color: pink;
+    border: 1px solid black;
+}
+
+.green {
+    background-color: green;
+    border: 1px solid black;
+}
+
+.panel-button {
+    margin: 0 -20px 20px auto;
+}
+
+body {
+    background-image:url('https://coolbackgrounds.io/images/backgrounds/index/ranger-4df6c1b6.png');
+    background-size: cover;
+}
+
+.panel {
+    height: 170px;
+}
+
+.panel-links {
+    text-decoration: none;
+    color: auto;
+}
+
+.panel-primary>.panel-heading {
+    background-color: #333;
+}
+
+.panel .btn {
+    background-color: #333;
+}
+
+.jumbotron {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+
+.jumbotron>h1 {
+    color: #111;
+}
+
+.jumbotron>p {
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+.blockquote>p {
+    font-family: 'Lora', serif;
+    font-size: 19px;
+}
+
+.reverse-well {
+    background-color: #333;
+    color: whitesmoke;
+    text-shadow: 0px 0px 12px black;
+    -webkit-box-shadow: inset 0px 0px 12px #111;
+     -moz-box-shadow: inset 0px 0px 12px #111;
+          box-shadow: inset 0px 0px 12px #111;
+    
+}
+
+.landing-page-jumbo {
+    -webkit-box-shadow: inset 0px 0px 12px #FFF;
+     -moz-box-shadow: inset 0px 0px 12px #FFF;
+          box-shadow: inset 0px 0px 12px #FFF;
+
+    
+}
+
+.bio-jumbo {
+    box-shadow: 1px 1px 20px 0px #00000085;
+    -webkit-box-shadow: 1px 1px 20px 0px #00000085;
+    -moz-box-shadow: 1px 1px 20px 0px #00000085;
+}
+
+.bio-name {
+    color: #111 !important;
+}
+
+input {
+    font-family: 'Arimo', sans-serif;
+}
+
+.custom-card {
+    color: inherit;
+    font-family: inherit;
+}
+
+.custom-card:hover {
+    color: inherit;
+}
+
+th {
+    font-size: 30px;
+}
+
+.table-button {
+    width: 130px;
+}
+
+.glyphicon-small {
+    font-size: 11px;
+}
+
+.games {
+    font-family: 'Shadows Into Light', cursive;
+}
