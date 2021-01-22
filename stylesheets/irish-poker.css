@@ -1,0 +1,225 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100px;
+    height: 150px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    box-shadow: 0px 0px 12px #888888;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-flipped .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+#all-container {
+    box-shadow: 0px 0px 18px #1a732f;
+    height: 600px;
+}
+
+.card-back {
+    background-image: url('PNG/green_back.png');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.card {
+      background-size: cover;
+      height: 100%;
+      width: 100%;
+      border: none;
+      background-color: var(--light);
+      cursor: pointer;
+}
+
+.card:disabled {
+    cursor: default;
+}
+
+#choice-1 {
+    opacity: 0;
+}
+
+#choice-2 {
+    opacity: 0;
+}
+
+#choice-3 {
+    opacity: 0;
+}
+
+#choice-4 {
+    opacity: 0;
+}
+
+#drinks-accrued {
+    margin-top: -60px;
+    margin-bottom: -100px;
+}
+
+.user-input {
+    cursor: pointer;
+    border: 1px solid var(--light);
+    border-radius: 5px;
+    padding: 0px 5px;
+    background-color: var(--light);
+}
+
+.user-input:hover {
+    color: var(--light);
+    background-color: var(--secondary);
+}
+
+.user-input:disabled {
+    cursor: default;
+}
+
+.red-input {
+    opacity: 0;
+    color: var(--danger);
+    background-color: var(--light);
+}
+
+.red-input:hover {
+    color: var(--light);
+    background-color: var(--danger);
+}
+
+.black-input {
+    opacity: 0;
+    color: var(--dark);
+    background-color: var(--light);
+}
+
+.black-input:hover {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+#instructions {
+    height: 100px;
+}
+
+.outcome {
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+}
+
+.higher-or-lower:hover {
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+#r-or-b-outcome {
+    opacity: 0;
+    font-weight: bold;
+}
+
+#h-or-l-outcome {
+    opacity: 0;
+    font-weight: bold;
+}
+
+.fade-in {
+	opacity: 1;
+	animation-name: fadeInOpacity;
+    animation-delay: 500ms;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
+}
+
+.fade-out {
+    opacity: 1;
+    animation-name: fadeOutOpacity;
+    animation-delay: 0ms;
+    animation-duration: 250ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOutOpacity {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+body {
+    background-color: var(--success);
+}
+
+:root {
+    --blue: #007bff;
+    --indigo: #6610f2;
+    --purple: #6f42c1;
+    --pink: #e83e8c;
+    --red: #dc3545;
+    --orange: #fd7e14;
+    --yellow: #ffc107;
+    --green: #28a745;
+    --teal: #20c997;
+    --cyan: #17a2b8;
+    --white: #fff;
+    --gray: #6c757d;
+    --gray-dark: #343a40;
+    --primary: #007bff;
+    --secondary: #6c757d;
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  }
