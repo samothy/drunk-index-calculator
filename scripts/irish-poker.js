@@ -114,9 +114,10 @@ function genCard(drawnCard) {
 };
 
 function convertToURL(value, suit) {
-    let prefix = '.../assets/images/PNG/';
+    let prefix = '../assets/images/PNG/';
     let suffix = '.png';
     let folderPath = value + suit;
+    console.log(prefix + folderPath + suffix);
     return prefix + folderPath + suffix;
 };
 
