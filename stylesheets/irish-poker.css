@@ -51,7 +51,7 @@
 }
 
 .card-back {
-    background-image: url('PNG/green_back.png');
+    background-image: url('../assets/images/PNG/green_back.png');
     background-size: cover;
     height: 100%;
     width: 100%;
