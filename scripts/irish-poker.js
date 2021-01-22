@@ -114,7 +114,7 @@ function genCard(drawnCard) {
 };
 
 function convertToURL(value, suit) {
-    let prefix = '.../assets/images/irish-poker/';
+    let prefix = '.../assets/images/PNG/';
     let suffix = '.png';
     let folderPath = value + suit;
     return prefix + folderPath + suffix;
