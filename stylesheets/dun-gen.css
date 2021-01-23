@@ -1,0 +1,108 @@
+body {
+    background-color: darkgray;
+}
+
+.dungeon-output {
+    background-color: white;
+    border-radius: 3px;
+    width: 100px;
+    padding: 0px 2px 2px 3px;
+}
+
+#output-box {
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+#top-row {
+    padding-top: 10px;
+}
+
+#total-combos {
+    padding: 2px 5px;
+}
+
+#sub-subtitle {
+    margin-top: -15px;
+}
+
+#top-row {
+    margin-bottom: 0px;
+}
+
+.output-slash-selector {
+    width: 200px;
+}
+
+#top-left-btn {
+    border-radius: 5px 0px 0px 0px;
+}
+
+#top-right-btn {
+    border-radius: 0px 5px 0px 0px;
+}
+
+#left-center-btn {
+    border-radius: 0px;
+}
+
+#right-center-btn {
+    border-radius: 0px;
+}
+
+#bottom-right-btn {
+    border-radius: 0px 0px 5px 0px;
+    width: 137px;
+    margin-right: 4px;
+    font-size: 0.8em;
+}
+
+#bottom-left-btn {
+    border-radius: 0px 0px 0px 5px;
+    width: 140px;
+    font-size: 0.8em;
+}
+
+.btn-group {
+    height: 60px;
+}
+
+#title {
+    border-radius: 5px;
+}
+
+#subtitle-desc {
+    padding: 0px 3px;
+}
+
+#subtitle-place {
+    padding: 0px 3px;
+}
+
+#letter-swap-box {
+    margin-top: -4px;
+    width: 35px;
+}
+
+.letter-swap {
+    margin-top: -7px;
+    height: 33%;
+    font-size: 0.5em;
+    padding-bottom: 5px;
+    border-radius: 0px;
+}
+
+#letter-up {
+    margin-bottom: -2px;
+    margin-top: -1px;
+}
+
+#letter-down {
+    margin-top: -48px;
+}
+
+#current-letter {
+    border-radius: 0px;
+    height: 10px;
+    font-size: 0.8em;
+}
