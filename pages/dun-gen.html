@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dun-Gen</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="dun-gen.css">
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center mt-5">
+            <h1 id='title' class='display-4 text-white bg-secondary text-light'>Dun-Gen</h1>
+            <p class='lead'>The <span id='subtitle-desc' class='dungeon-output'>Diminutive</span> Name Generator For <span id='subtitle-place' class='dungeon-output'>Dungeons</span></p>
+            <p id='sub-subtitle'><small>...with <span id='total-combos' class='dungeon-output'>0</span> total combinations!</small></p>
+            <br>
+
+            <div id='output-box' class="container text-center"> 
+                <div class="container">
+                    <div id='descriptor-box' class="btn-group" role='group' aria-label='descriptor-box'>
+                        <button id='top-left-btn' type='button' class='btn btn-secondary text-light' onclick="arrowLeft('desc')">←</button>
+                        <button type='button' class='btn btn-secondary text-light output-slash-selector' id='desc-output'>Generated</button>
+                        <button id='top-right-btn' type='button' class='btn btn-secondary text-light' onclick="arrowRight('desc')">→</button>
+                    </div>
+                    <br>
+                    <div id='place-box' class="btn-group" role='group' aria-label='place-box'>
+                        <button id='left-center-btn' type='button' class='btn btn-secondary text-light' onclick="arrowLeft('place')">←</button>
+                        <button type='button' class='btn btn-secondary text-light output-slash-selector' id='place-output'>Dungeon</button>
+                        <button id='right-center-btn' type='button' class='btn btn-secondary text-light' onclick="arrowRight('place')">→</button> 
+                    </div>
+                    <br>
+                    <div id='button-box' class="btn-group" role='group' aria-label='button-box'>
+                        <button id='bottom-left-btn'  type='button' class='btn btn-warning text-light' onclick='toggle()'>ILLITERATION</button>
+                        <div id='letter-swap-box'>
+                            <div class="row">
+                                <button id='letter-up' class='letter-swap btn btn-warning text-light' onclick="genByNewLetter('up')">↑</button>
+                            </div>
+                            <div class="row">
+                                <button id='current-letter' class='btn btn-warning text-light' onclick="genByNewLetter('same')">A</p>
+                            </div>
+                            <div class="row">
+                                <button id='letter-down' class='letter-swap btn btn-warning text-light' onclick="genByNewLetter('down')">↓</button>
+                            </div>
+                        </div>
+                        <button id='bottom-right-btn' type='button' class='btn btn-warning text-light' id='place-output' onclick='generate()'>GENERATE<br>RANDOM</button>
+                    </div>                          
+                </div>
+            </div>                             
+        </div>
+    </div>
+    
+<script src='dun-gen.js'></script>
+</body>
+</html>
