@@ -1,0 +1,114 @@
+body {
+    background: lightgray url("../assets/images/bluewall.jpg");
+    background-size: cover;
+}
+
+h4 {
+    margin: 10px 5% 0px 5%;
+}
+
+h5 {
+    letter-spacing: 2px;
+}
+
+#description {
+    letter-spacing: normal;
+}
+
+select {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.disclaimer {
+    font-size: 50%;
+}
+
+.gray {
+    color: gray;
+}
+
+#vol-dropdown {
+    width: 110%;
+    font-size: 0.8em;
+    padding-left: 4px;
+}
+
+.item {
+    margin: 1px 0px 3px 0px;
+    padding-left: 20px;
+}
+
+.item:hover {
+    background-color: lightgray;
+}
+
+.dropdown-menu {
+    margin-left: 15px;
+}
+
+#description {
+    margin: 0px 5% 0px 5%;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#all-container {
+    margin-top: 50px;
+}
+
+#inner-container {
+    padding: 15px;
+}
+
+#calculate {
+    height: 70px;
+    margin: 10px 0px 5px 0px;
+}
+
+#output-box {
+    margin-bottom: 0px;
+}
+
+.preset {
+    font-size: 10px;
+    padding: 1px;
+    height: 25px;
+}
+
+#comments {
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+small {
+    font-size: 12px;
+}
+
+#output-row {
+    padding: 10px;
+    margin-bottom: -40px;
+}
+
+#output-row .well {
+    background-color: white;
+}
+
+#preset-dropdown {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.output {
+    text-align: center;
+    margin: 0px 5px;
+    width: 47%;
+}
+
+#input-well .row {
+    margin: 5px 0px;
+}
+
+.input-row {
+    margin: 5px 0px;
+}
