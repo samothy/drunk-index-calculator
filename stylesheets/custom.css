@@ -13,7 +13,7 @@
 }
 
 body {
-    background-image:url('bg-tile.jpg');
+    background-image:url('../assets/images/bg-tile.jpg');
     background-repeat: repeat;
 }
 
